@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["esnext"],
+    "outDir": "./dist",
+    "baseUrl": "./src"
+    // "paths": {
+    //   "@controllers/*": ["src/controllers/*"],
+    //   "@decorators/*": ["src/decorators/*"],
+    //   "@middlewares/*": ["src/middlewares/*"],
+    //   "@services/*": ["src/services/*"],
+    //   "@ws/*": ["src/ws/*"]
+    // }
+  },
+  "include": ["src"]
+}

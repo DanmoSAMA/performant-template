@@ -1,0 +1,32 @@
+{
+  "name": "performant-template",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A monorepo with fe & be template using pnpm.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "DanmoSAMA",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^7.12.1",
+    "eslint-config-alloy": "^4.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.6.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pnpm": {
+    "overrides": {
+      "got@<11.8.5": ">=11.8.5",
+      "glob-parent@<5.1.2": ">=5.1.2"
+    }
+  }
+}
