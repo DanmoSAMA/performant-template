@@ -21,11 +21,6 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "paths": {
-      "@monorepo/backend": ["./packages/backend/src"],
-      "@monorepo/frontend": ["./packages/frontend/src"],
-      "@monorepo/utils": ["./packages/utils/src"]
-    },
     "noEmit": true
   },
   "exclude": ["node_modules", "build", "dist"],

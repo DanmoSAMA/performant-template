@@ -1,12 +1,18 @@
 {
   "name": "utils",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "dependencies": {
+    "shared": "workspace:*"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "pnpm tsc --module esnext --outDir dist/esm && pnpm tsc --module commonjs --outDir dist/cjs"
+  }
 }

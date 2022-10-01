@@ -5,7 +5,6 @@
  */
 
 import Koa from 'koa'
-// import TestServices from '@services/test.service'
 import TestServices from '../services/test.service'
 
 class TestController {

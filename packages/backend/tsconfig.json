@@ -3,14 +3,16 @@
   "compilerOptions": {
     "lib": ["esnext"],
     "outDir": "./dist",
-    "baseUrl": "./src"
-    // "paths": {
-    //   "@controllers/*": ["src/controllers/*"],
-    //   "@decorators/*": ["src/decorators/*"],
-    //   "@middlewares/*": ["src/middlewares/*"],
-    //   "@services/*": ["src/services/*"],
-    //   "@ws/*": ["src/ws/*"]
-    // }
+    // 使用 alias 会报 "Module not found"，但 tsc --traceResolution 报 success，原因未知
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@decorators/*": ["src/decorators/*"],
+      "@middlewares/*": ["src/middlewares/*"],
+      "@services/*": ["src/services/*"],
+      "@ws/*": ["src/ws/*"]
+    }
   },
   "include": ["src"]
 }
