@@ -4,7 +4,7 @@ import './index.scss'
 
 function Home() {
   hello()
-  return <div className={'home'}>Hello world</div>
+  return <div className='home'>Hello world</div>
 }
 
 export default Home

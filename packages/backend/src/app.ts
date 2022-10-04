@@ -18,12 +18,11 @@ app
     Cors({
       origin: '*',
       allowMethods: '*',
-      allowHeaders:
-        'Origin, X-Requested-With, Content-Type, Accept, Authorization',
+      allowHeaders: 'Origin, X-Requested-With, Content-Type, Accept, Authorization',
       exposeHeaders:
         'Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Cache-Control, Content-Language, Content-Type',
-      credentials: true
-    })
+      credentials: true,
+    }),
   )
   .use(KoaBody())
   .use(router.routes())

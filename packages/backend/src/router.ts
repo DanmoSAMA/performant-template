@@ -8,7 +8,7 @@ import Router from 'koa-router'
 import TestController from './controllers/test.controller'
 
 const router = new Router({
-  prefix: '/api'
+  prefix: '/api',
 })
 
 /**

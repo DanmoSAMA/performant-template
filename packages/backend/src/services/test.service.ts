@@ -10,7 +10,7 @@ class TestServices {
    * @param params
    */
   public async saySomeThing(params: string): Promise<string> {
-    const p = new Promise<string>((res, rej) => {
+    const p = new Promise<string>((res) => {
       setTimeout(() => {
         res(params + ' DanmoSAMA')
       }, 1000)

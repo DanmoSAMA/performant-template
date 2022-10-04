@@ -1,0 +1,22 @@
+extends:
+  - '../../.eslintrc.yml'
+  - alloy/react
+
+env:
+  browser: true
+
+settings:
+  import/resolver:
+    alias:
+      map:
+        - ['@/', ./src/]
+      extensions:
+        - .ts
+        - .tsx
+  react:
+    version: detect
+
+
+
+
+

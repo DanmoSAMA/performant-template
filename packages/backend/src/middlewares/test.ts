@@ -7,7 +7,7 @@ export default async function test(ctx: Koa.Context, next: Koa.Next) {
   } catch (err: any) {
     ctx.body = {
       statusCode: err.code,
-      statusMsg: err.message
+      statusMsg: err.message,
     }
   }
 }

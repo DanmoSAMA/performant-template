@@ -5,8 +5,8 @@ const routesConfig: RouteConfig[] = [
   {
     path: '/home',
     exact: true,
-    element: loadable(() => import('@/pages/Home'))
-  }
+    element: loadable(() => import('@/pages/Home')),
+  },
 ]
 
 export default routesConfig
