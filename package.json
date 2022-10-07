@@ -35,11 +35,6 @@
   "engines": {
     "node": ">=8.10.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "**/*.{ts, tsx}": [
       "prettier --write .",
