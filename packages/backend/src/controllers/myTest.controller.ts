@@ -5,7 +5,7 @@
  */
 
 import Koa from 'koa'
-import TestServices from '../services/test.service'
+import TestServices from '../services/myTest.service'
 
 class TestController {
   public async getContent(ctx: Koa.Context): Promise<void> {

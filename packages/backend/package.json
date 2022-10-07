@@ -22,13 +22,13 @@
     "@types/koa__cors": "^3.0.2",
     "@types/mongoose": "^5.10.4",
     "@types/socket.io": "^3.0.2",
-    "eslint-config-koa": "^2.0.2",
     "eslint-plugin-node": "^11.1.0",
     "nodemon": "^2.0.20",
     "tsconfig-paths": "^4.1.0"
   },
   "scripts": {
     "dev": "nodemon",
-    "build": "rm -rf dist && tsc"
+    "build": "rm -rf dist && tsc",
+    "test": "jest"
   }
 }

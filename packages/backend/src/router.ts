@@ -5,7 +5,7 @@
  */
 
 import Router from 'koa-router'
-import TestController from './controllers/test.controller'
+import TestController from './controllers/myTest.controller'
 
 const router = new Router({
   prefix: '/api',

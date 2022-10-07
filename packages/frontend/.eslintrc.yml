@@ -15,8 +15,3 @@ settings:
         - .tsx
   react:
     version: detect
-
-
-
-
-
